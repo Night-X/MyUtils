@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyUtils</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+</resources>
