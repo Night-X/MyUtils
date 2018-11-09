@@ -8,6 +8,8 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // 在打包的aar中加入混淆配置，接入商就不需要关心本SDK的混淆问题了
+        consumerProguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
     buildTypes {
         release {
